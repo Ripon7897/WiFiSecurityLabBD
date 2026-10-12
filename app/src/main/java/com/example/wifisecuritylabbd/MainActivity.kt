@@ -2,6 +2,7 @@ package com.example.wifisecuritylabbd
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.activity.compose.setContent
 import androidx.appcompat.app.AppCompatDelegate
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.padding
