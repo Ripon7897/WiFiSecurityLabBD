@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- AppCompat base theme is required because MainActivity extends AppCompatActivity
+         (needed for per-app language switching). Compose draws its own Material 3 theme. -->
+    <style name="Theme.WiFiSecurityLabBD" parent="Theme.AppCompat.DayNight.NoActionBar" />
+</resources>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WiFi Security Lab BD</string>
+    <string name="lang_switch_to">বাংলা</string>
+
+    <string name="tab_scan">Scan</string>
+    <string name="tab_recovery">Recovery</string>
+    <string name="tab_learn">Learn</string>
+
+    <string name="scan_intro">Shows Wi-Fi networks this phone can see: name, signal strength, frequency band, and the security type each router advertises.</string>
+    <string name="scan_limits_note">Android limits how often apps can scan, needs Location turned on to return scan results, and may hide some networks. The security type is what the router advertises, not a test of how strong its password is.</string>
+    <string name="location_needed">Android requires the Location permission to read Wi-Fi scan results. This app does not use your GPS location.</string>
+    <string name="grant_location">Allow location access</string>
+    <string name="scan_button">Scan now</string>
+    <string name="scanning">Scanning…</string>
+    <string name="wifi_off">Wi-Fi is turned off. Turn it on and scan again.</string>
+    <string name="permission_denied">Location permission was denied, so scan results cannot be read.</string>
+    <string name="cached_results_note">Android returned earlier results because a new scan was throttled or timed out. Wait a minute and scan again.</string>
+    <string name="no_results">No networks found. Make sure Wi-Fi and Location are on, then scan again.</string>
+    <string name="hidden_network">(Hidden network)</string>
+    <string name="rssi_format">%1$d dBm · %2$s</string>
+    <string name="freq_format">%1$s · Channel %2$d</string>
+    <string name="security_format">Security: %1$s</string>
+    <string name="bssid_format">BSSID: %1$s</string>
+    <string name="brand_hint_format">Possible brand: %1$s</string>
+    <string name="brand_unverified">Guess based on the network name only. It may be wrong.</string>
+
+    <string name="quality_excellent">Excellent</string>
+    <string name="quality_good">Good</string>
+    <string name="quality_fair">Fair</string>
+    <string name="quality_weak">Weak</string>
+    <string name="quality_poor">Very weak</string>
+
+    <string name="sec_open">Open (no password)</string>
+    <string name="sec_wep">WEP (broken, obsolete)</string>
+    <string name="sec_wpa">WPA (obsolete)</string>
+    <string name="sec_wpa2">WPA2-Personal</string>
+    <string name="sec_wpa3">WPA3-Personal</string>
+    <string name="sec_wpa23">WPA2/WPA3 mixed</string>
+    <string name="sec_enterprise">Enterprise (802.1X)</string>
+    <string name="sec_owe">OWE (encrypted, no password)</string>
+    <string name="sec_unknown">Unknown</string>
+
+    <string name="recovery_ownership_note">Use these guides only for devices and routers you own or are authorised to manage. This app does not read other people\'s networks or passwords.</string>
+    <string name="saved_title">View a saved Wi-Fi password on your own phone</string>
+    <string name="saved_intro">Android lets you see the password of a network this phone has already joined. It requires your screen lock. Menu names vary by manufacturer and Android version.</string>
+    <string name="router_title">Router access and factory reset</string>
+    <string name="router_intro">Use these steps if you have lost the router admin login or need to restore the router to factory settings.</string>
+
+    <string name="learn_wpa_title">WPA2 and WPA3</string>
+    <string name="learn_strength_title">Password strength</string>
+    <string name="learn_hardening_title">Router hardening</string>
+    <string name="learn_weak_title">Common weaknesses</string>
+    <string name="learn_scope_title">What this app does not do</string>
+    <string name="learn_scope_body">This app does not recover, crack, or test Wi-Fi passwords. It has no handshake capture, dictionary or brute-force tools, or deauthentication features. Android does not let apps read other networks\' passwords, and an app cannot verify that you own a network, so such features would be as easy to misuse as to use legitimately. For your own network, use the router admin page, the saved-password steps in Recovery, or contact your ISP. Security professionals test their own equipment with dedicated tools in controlled labs, outside this app.</string>
+
+    <string-array name="saved_steps">
+        <item>Open Settings on your phone and search for "Wi-Fi" or "Saved networks".</item>
+        <item>Open Wi-Fi (or Network &amp; internet, then Internet) and tap the network you are connected to.</item>
+        <item>Look for a Share or QR-code option.</item>
+        <item>Confirm with your PIN, pattern, fingerprint or face unlock.</item>
+        <item>Some phones show the password as text under the QR code; others show only the QR code. Anyone who scans the QR code gets the password, so do not share a screenshot of it.</item>
+        <item>If the option is missing, the phone may not have saved this network, or the menu is named differently on your phone. Search Settings for "Wi-Fi password" or "Share".</item>
+    </string-array>
+
+    <string-array name="router_steps">
+        <item>Connect to your own network by Wi-Fi or an Ethernet cable.</item>
+        <item>Find the router address: tap the connected network in Wi-Fi settings and read the "Gateway" value. Common addresses are 192.168.0.1, 192.168.1.1 and 192.168.100.1, but use the one your phone shows.</item>
+        <item>Open that address in a browser. Some TP-Link models also accept tplinkwifi.net.</item>
+        <item>Log in with the admin password. If it was never changed, the default is often printed on the router label. If it was changed, use your saved records.</item>
+        <item>No admin password? Check your password manager, notes, or the setup papers from your ISP. If none of these work, use the factory reset below.</item>
+        <item>Factory reset: with the router powered on, press and hold the Reset button (usually a small recessed hole) for about 10 seconds until the lights restart. Timing differs by model, so check your manual.</item>
+        <item>Before resetting, write down your ISP connection details (for PPPoE connections, the username and password from your ISP), any port-forwarding rules, and the Wi-Fi name you use. A reset erases them.</item>
+        <item>After the reset: log in with the default login on the label, change the admin password, set Wi-Fi security to WPA2-Personal (AES) or WPA2/WPA3, set a new long passphrase, and check for firmware updates.</item>
+        <item>If the internet does not work after the reset, contact your ISP for the correct connection settings.</item>
+    </string-array>
+
+    <string-array name="learn_wpa_items">
+        <item>WPA2-Personal (PSK) protects the Wi-Fi key with a 4-way handshake and key derivation. It is still widely used. Its strength depends almost entirely on the passphrase: a long random passphrase is strong, while a short or common one is not.</item>
+        <item>WPA3-Personal (SAE) uses a password-authenticated key exchange designed to resist offline guessing. It needs WPA3-capable devices. WPA2/WPA3 transition mode lets older devices connect, but it is a compromise.</item>
+        <item>WEP is broken and must not be used. Original WPA with TKIP is obsolete too.</item>
+        <item>The 2017 KRACK research affected WPA2 implementations. Patched firmware and devices fixed it, which is why router and phone updates matter.</item>
+    </string-array>
+
+    <string-array name="learn_strength_items">
+        <item>Use a random passphrase of at least 16 characters, or 4 to 6 random words, unique to that network.</item>
+        <item>Avoid the network name, phone numbers, birthdays, family names, and simple patterns such as "bd12345678".</item>
+        <item>Store the passphrase in a password manager so you never need to memorise it.</item>
+        <item>Change the passphrase when someone who once had it, such as a former employee, no longer should.</item>
+    </string-array>
+
+    <string-array name="learn_hardening_items">
+        <item>Change the router admin password from the default, and make it different from the Wi-Fi passphrase.</item>
+        <item>Use WPA2-AES, or WPA2/WPA3 if all your devices support WPA3. Turn off WEP and TKIP-only options.</item>
+        <item>Disable WPS. Its PIN method is weak.</item>
+        <item>Keep firmware updated, and enable automatic updates if the router offers them.</item>
+        <item>Turn off remote administration from the internet unless you need it.</item>
+        <item>Put guests and smart devices on a separate guest network.</item>
+        <item>Turn off UPnP unless a specific app needs it, because it lets devices open ports automatically.</item>
+        <item>Do not put the router brand or model in the network name. Hiding the network name does not provide real security.</item>
+    </string-array>
+
+    <string-array name="learn_weak_items">
+        <item>Default admin logins and default Wi-Fi passwords, especially when printed on labels and shared across many units of the same model.</item>
+        <item>Outdated firmware with known vulnerabilities, common in old ISP-supplied routers.</item>
+        <item>WPS enabled, which allows PIN-based attacks.</item>
+        <item>Open and WEP networks, which offer no real protection.</item>
+        <item>Short or common passphrases, which can be guessed offline by anyone who has captured the handshake. The defence is a long random passphrase.</item>
+        <item>Remote administration exposed to the internet.</item>
+    </string-array>
+</resources>
